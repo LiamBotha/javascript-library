@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Exercise</title>
+    <meta charset="UTC-8" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div id="container">
+        <button id="add-btn">Add Book</button>
+        <div id=book-popup>
+            <button id="close-btn">X</button>
+            <form onsubmit="addBookToLibrary(event)">
+                <input id="title" name="title" type="text" placeholder="Title of the Book">
+                <input id="author" name="author" type="text" placeholder="Author's name">
+                <input id="num-pages" name="num-pages" type="number" placeholder="Number of pages">
+                <label for="has-read">Have Read?<input id="has-read" name="has-read" type="checkbox"></label>
+                <br/><input type="submit" id="submit-btn">
+            </form>
+        </div>
+        <div id="book-list"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

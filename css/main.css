@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #2f2f2f;
+}
+
+#book-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 3rem;
+}
+
+#add-btn {
+    width: 100px;
+    height: 40px;
+    background: rgb(49, 167, 49);
+    color: white;
+    border: none;
+    margin: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 2px 3px black;
+    width: 180px;
+    height: 250px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.read-btn { 
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(241, 50, 50);
+}
+
+.delete-btn {
+    position: absolute;
+    right: 0.1rem;
+    top: 0.1rem;
+    border: none;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+#book-popup {
+    display: none;
+    position: fixed;
+    top: 35vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 250px;
+    z-index: 1;
+    background: white;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+#book-popup > form > * {
+    margin: 0.7rem auto;
+}
+
+#book-popup > form > label {
+    margin: 0.9rem auto;
+    font-size: 0.9rem;
+}
+
+#submit-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    border: none;
+    background: rgb(255, 45, 45);
+    padding: 0.6rem 1.2rem;
+    font-weight: 700;
+}
+
+#close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: transparent;
+    font-weight: 700;
+}
+
+button:hover, #close-btn:hover, #submit-btn:hover {
+    filter: brightness(150%);
+    color: rgba(0,0,00.5f);
+}
+
