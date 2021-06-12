@@ -1,0 +1,1 @@
+Simple library with local storage for the info for The odin project
